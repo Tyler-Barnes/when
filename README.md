@@ -5,7 +5,7 @@ I very often found myself making a while loop and checking for the opposite cond
 
 In the case of AVR programming, lets imagine you are polling a register flag manually, and you don't want to move until the condition becomes true.</p>   
 
-One might code the following: 
+One might code the following:</br> 
   while (!ACSR & 0x20) {}  // wait for analog comparator to fire
   doSomething();           // do something afterwards
 
