@@ -8,6 +8,7 @@ In the case of AVR programming, lets imagine you are polling a register flag man
 One might code the following:
 
   <code>  while (!ACSR & 0x20) {}  // wait for analog comparator to fire</code>
+  
   <code>    doSomething();           // do something afterwards</code>
 
 However, I don't find this to read very intuitively. You are saying "while the condition I want is not true, wait utill it is".
