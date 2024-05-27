@@ -1,3 +1,4 @@
+
 The idea behind this macro was to help the code read more logically when polling for a register update or pin state to change in embedded programming. 
 
 I very often found myself making a while loop and checking for the opposite condition that I really cared about in order to poll for a certain condition to be true. 
