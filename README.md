@@ -16,7 +16,7 @@ I would much rather read it as if to say "when the condition I want becomes true
 
 Using a when() loop would turn the above example into: 
 
-  <code>when (ACSR & 0x20) {  // wait for analog comparator to fire/code></br>
+  <code>when (ACSR & 0x20) {  // wait for analog comparator to fire</code></br>
   <code>  doSomething();      // do something afterwards</code></br>
   <code>}</code></br></code>
 
