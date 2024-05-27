@@ -23,6 +23,7 @@ Using a when() loop would turn the above example into:
 This has the added advantage of creating another scope for local variables if you want to declare some within the new {}Brackets. 
 
 It is also useful when waiting for and reading serial data.
-  when (Serial.available()) {
-    newChar = Serial.read();
-  } 
+
+  <code>when (Serial.available()) {</code></br>
+  <code>  newChar = Serial.read();</code></br>
+  <code>}</code></br> 
