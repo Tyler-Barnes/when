@@ -6,8 +6,8 @@ I very often found myself making a while loop and checking for the opposite cond
 In the case of AVR programming, lets imagine you are polling a register flag manually, and you don't want to move until the condition becomes true.</p>   
 
 One might code the following:</br> 
-  while (!ACSR & 0x20) {}  // wait for analog comparator to fire
-  doSomething();           // do something afterwards
+<p>  while (!ACSR & 0x20) {}  // wait for analog comparator to fire</br></p>
+<p>  doSomething();           // do something afterwards</p>
 
 However, I don't find this to read very intuitively. You are saying "while the condition I want is not true, wait utill it is".
   
