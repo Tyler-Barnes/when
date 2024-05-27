@@ -8,16 +8,16 @@ In the case of AVR programming, lets imagine you are polling a register flag man
 One might code the following:
 
   <code>  while (!ACSR & 0x20) {}  // wait for analog comparator to fire</code></br>
-  <code>    doSomething();           // do something afterwards</code>
+  <code>  doSomething();           // do something afterwards</code>
 
 However, I don't find this to read very intuitively. You are saying "while the condition I want is not true, wait utill it is".
   
 I would much rather read it as if to say "when the condition I want becomes true, do something".
 
 Using a when() loop would turn the above example into: 
-  when (ACSR & 0x20) {  // wait for analog comparator to fire
-    doSomething();      // do something afterwards
-  }
+  <code>when (ACSR & 0x20) {  // wait for analog comparator to fire</br>
+    doSomething();      // do something afterwards</br>
+  }</code>
 
 This has the added advantage of creating another scope for local variables if you want to declare some within the new {}Brackets. 
 
