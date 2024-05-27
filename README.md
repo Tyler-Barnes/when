@@ -15,6 +15,7 @@ However, I don't find this to read very intuitively. You are saying "while the c
 I would much rather read it as if to say "when the condition I want becomes true, do something".
 
 Using a when() loop would turn the above example into: 
+
   <code>when (ACSR & 0x20) {  // wait for analog comparator to fire/code></br><
   <code>  doSomething();      // do something afterwards</code></br>
   <code>}</code></br></code>
